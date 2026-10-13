@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aakash Maurya</title>
+<meta name="description" content="Aakash Maurya, Lead AI Engineer. I build agent harnesses, evaluation and the production backend around language models. 10+ years in distributed systems.">
+<meta property="og:title" content="Aakash Maurya, Lead AI Engineer">
+<meta property="og:description" content="Agent harnesses, LLM evaluation and production backend. 10+ years in distributed systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="mark" href="#main" aria-label="Aakash Maurya, home">AM</a>
+  <nav aria-label="Sections">
+    <a href="#build">What I build</a>
+    <a href="#work">Work</a>
+    <a href="#fit">Where I fit</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-text">
+      <p class="who">Aakash Maurya, Lead AI Engineer</p>
+      <h1 id="hero-title">I build what goes around the model.</h1>
+      <p class="lede">The loop that lets it act, the tools it calls, what goes into its context, the memory it keeps, and the checks that catch it when it is wrong. Underneath that, 10+ years of production backend and distributed systems.</p>
+      <p class="actions">
+        <a class="btn" href="mailto:maurya.aakash1@gmail.com">Email me</a>
+        <a class="link" href="https://www.linkedin.com/in/aakash16/">LinkedIn</a>
+        <a class="link" href="https://github.com/aakash16">GitHub</a>
+      </p>
+    </div>
+
+    <figure class="harness" aria-labelledby="harness-cap">
+      <svg viewBox="0 0 360 360" role="img" aria-labelledby="harness-svg-title">
+        <title id="harness-svg-title">Diagram of an agent harness: a language model at the center, surrounded by the agent loop, tools, context, memory, guardrails and an output verifier.</title>
+        <circle class="orbit" cx="180" cy="180" r="128"/>
+        <g class="spokes">
+          <line x1="180" y1="180" x2="180" y2="52"/>
+          <line x1="180" y1="180" x2="290.9" y2="116"/>
+          <line x1="180" y1="180" x2="290.9" y2="244"/>
+          <line x1="180" y1="180" x2="180" y2="308"/>
+          <line x1="180" y1="180" x2="69.1" y2="244"/>
+          <line x1="180" y1="180" x2="69.1" y2="116"/>
+        </g>
+        <g class="core">
+          <circle cx="180" cy="180" r="46"/>
+          <text x="180" y="185" text-anchor="middle">model</text>
+        </g>
+        <g class="node" style="--i:0"><circle cx="180" cy="52" r="7"/><text x="180" y="30" text-anchor="middle">agent loop</text></g>
+        <g class="node" style="--i:1"><circle cx="290.9" cy="116" r="7"/><text x="304" y="104" text-anchor="start">tools</text></g>
+        <g class="node" style="--i:2"><circle cx="290.9" cy="244" r="7"/><text x="304" y="264" text-anchor="start">context</text></g>
+        <g class="node" style="--i:3"><circle cx="180" cy="308" r="7"/><text x="180" y="338" text-anchor="middle">memory</text></g>
+        <g class="node" style="--i:4"><circle cx="69.1" cy="244" r="7"/><text x="56" y="264" text-anchor="end">guardrails</text></g>
+        <g class="node" style="--i:5"><circle cx="69.1" cy="116" r="7"/><text x="56" y="104" text-anchor="end">verifier</text></g>
+      </svg>
+      <figcaption id="harness-cap">The harness I built for OVVE, a personal AI assistant in beta on Google Play.</figcaption>
+    </figure>
+  </section>
+
+  <section id="build" class="block" aria-labelledby="build-title">
+    <h2 id="build-title">What I build</h2>
+    <dl class="caps">
+      <div>
+        <dt>Agent harnesses</dt>
+        <dd>A bounded tool-calling loop, routing between a fast deterministic path and the full agent, parallel tool calls, and a watchdog for stalled runs. In OVVE that loop drives 21 tools.</dd>
+      </div>
+      <div>
+        <dt>Evaluation you can trust</dt>
+        <dd>Persona-based scenarios graded by a semantic judge. The first full run of the OVVE suite found memory-recall and context-isolation defects that months of manual testing had missed.</dd>
+      </div>
+      <div>
+        <dt>Memory and retrieval</dt>
+        <dd>Structured records for exact state, an entity graph for relationships, semantic recall for the fuzzy rest, and each question answered by the store that can answer it.</dd>
+      </div>
+      <div>
+        <dt>Guardrails on real actions</dt>
+        <dd>A confidence gate on every autonomous write: high confidence acts, medium asks the user, low does nothing. An output verifier that replans when an answer fails a check.</dd>
+      </div>
+      <div>
+        <dt>Cost and observability</dt>
+        <dd>Token cost and latency traced per call in LangSmith, and an operating cost model at 10,000 users built before pricing was set.</dd>
+      </div>
+      <div>
+        <dt>Backend that holds up</dt>
+        <dd>Event-driven microservices, Kafka pipelines, zero-downtime migrations, CI that runs in minutes, and alerting on the failures that matter. Java, TypeScript and Python on AWS, Azure and Cloudflare.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="block own" aria-labelledby="own-title">
+    <h2 id="own-title">What you can hand me</h2>
+    <p class="intro">A problem with a vague edge and a real deadline. I take it from there:</p>
+    <ul class="own-list">
+      <li><strong>Architecture and technology choices</strong>, written down with the reasons, so the next engineer is not guessing.</li>
+      <li><strong>Delivery to production</strong>, including the release plan, the rollback, and the dashboards that show it worked.</li>
+      <li><strong>Quality you can measure</strong>, through tests, contract checks and evals instead of manual confidence.</li>
+      <li><strong>Security and data handling</strong>, from auth to third-party access, as part of the design rather than a review at the end.</li>
+      <li><strong>The engineers around it</strong>. I have led a five-engineer team and mentored engineers on test-driven development and contract testing.</li>
+    </ul>
+  </section>
+
+  <section id="work" class="block" aria-labelledby="work-title">
+    <h2 id="work-title">Selected work</h2>
+    <ol class="work">
+      <li>
+        <p class="when">2025 to now</p>
+        <div>
+          <h3>OVVE, at Flowhi</h3>
+          <p class="role">Founding Engineer</p>
+          <p>A proactive personal AI assistant, live at <a href="https://ovve.flowhi.ai">ovve.flowhi.ai</a> and in beta on Google Play with 20 active testers in its first month. I own engineering and technical direction in a three-person team: the agent harness, the memory layer, Gmail and Calendar integrations, Flutter clients for four platforms, a TypeScript backend on Cloudflare Workers and Supabase, the eval suite, and a security audit with CASA Tier 2 preparation. 2,000+ commits across five repositories.</p>
+        </div>
+      </li>
+      <li>
+        <p class="when">2026 to now</p>
+        <div>
+          <h3>Model training and evaluation, for a frontier AI lab</h3>
+          <p class="role">AI Engineer, contract</p>
+          <p>I design multi-step coding and reasoning tasks used to train and evaluate frontier language models across six domains, and review AI-generated code for correctness, security and engineering practice.</p>
+        </div>
+      </li>
+      <li>
+        <p class="when">2024 to 2025</p>
+        <div>
+          <h3>Returns Console, at Avalara</h3>
+          <p class="role">Technical Lead</p>
+          <p>Backend for an enterprise US tax compliance platform where a late or wrong filing carries legal cost. I traced a month-end production failure from Kafka consumer lag through dead-letter queues to a validation gap, fixed it with stricter validation, event tracing and circuit breakers, and shipped it blue-green with no customer impact. I brought contract testing into CI and took coverage above 80%.</p>
+        </div>
+      </li>
+      <li>
+        <p class="when">2020 to 2024</p>
+        <div>
+          <h3>GAP Inc. and Apple, through Thoughtworks</h3>
+          <p class="role">Senior Software Engineer</p>
+          <p>Moved GAP's customer profile monolith to event-driven microservices on Azure for a loyalty program of about 40 million members, migrated 10 million+ records over Kafka with zero downtime, and cut CI from 90 minutes to 20. For Apple's ad platform I architected a dependency portal covering 750+ services on AWS, cutting the feedback loop from hours to minutes.</p>
+        </div>
+      </li>
+      <li>
+        <p class="when">2016 to 2020</p>
+        <div>
+          <h3>Android infotainment, at Hyundai MOBIS</h3>
+          <p class="role">Senior Research Engineer</p>
+          <p>Led a five-engineer team building core apps that shipped in Hyundai and Kia production vehicles, where a defect means a dealer visit rather than an app update. Halved Android OS build time and won the 2019 Tech Day Award for a face-recognition driver profile.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="side-project">
+      <h3><a href="https://github.com/aakash16/memantic">Memantic</a></h3>
+      <p>My open source, local-first RAG system in Python. It organizes knowledge by idea rather than by document: overlapping claims from different sources merge into one node with several citations, so a question returns concepts instead of near-duplicate passages.</p>
+    </div>
+  </section>
+
+  <section id="fit" class="block" aria-labelledby="fit-title">
+    <h2 id="fit-title">Where I do my best work</h2>
+    <ul class="fit">
+      <li><strong>Ownership of an outcome.</strong> I do my best work when I am trusted with a system end to end and judged on whether it works.</li>
+      <li><strong>Small teams with clear boundaries.</strong> Open collaboration, defined ownership, and work that is visible without campaigning for it.</li>
+      <li><strong>Written-first.</strong> Decisions and their reasons on the page, so people can disagree with the reasoning instead of the person.</li>
+      <li><strong>Root causes over patches.</strong> I break a problem into pieces I can test and trace where it really starts.</li>
+      <li><strong>Remote, from India.</strong> I work on IST and overlap comfortably with teams in Asia-Pacific and Europe.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="block contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Working on agents that have to be dependable?</h2>
+    <p>I am open to remote roles in AI engineering and to scoped consulting. The fastest way to reach me is email.</p>
+    <p class="actions">
+      <a class="btn" href="mailto:maurya.aakash1@gmail.com">maurya.aakash1@gmail.com</a>
+      <a class="link" href="https://www.linkedin.com/in/aakash16/">LinkedIn</a>
+      <a class="link" href="https://github.com/aakash16">GitHub</a>
+    </p>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>Aakash Maurya, Hyderabad, India</p>
+</footer>
+</body>
+</html>
